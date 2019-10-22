@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <title>Words of Wisdom</title>
+</head>
+
+<body>
+  <div id="root">
+    <h1> {{ message }} </h1>
+    <h2>Enter your name below</h2>
+    <input type="text" id="input" v-model="name">
+    <p><button class="btn btn-lg btn-primary" v-on:click="seen = !seen">Submit</button></p>
+    <h2 v-if="seen">Hello {{ name }}! Welcome to the Wisdom Finder.</h2>
+
+    <p>
+      Beware if you click below you will be exposed to wonderful and magical wisdom so powerful that if not followed could be dangerous. Click enter below if you dare to start this journey.
+    </p>
+  </div>
+
+  <script src="https://unpkg.com/vue@2.6.10/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#root',
+      data: {
+        message: 'Find the Wisdom You Seek',
+        name: '',
+        seen: false
+      }
+    });
+  </script>
+</body>
+
+</html>
