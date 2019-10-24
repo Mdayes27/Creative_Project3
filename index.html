@@ -9,7 +9,7 @@
 <body>
   <div id="root">
     <h1> {{ message }} </h1>
-    <h2>Enter your name below</h2>
+    <h2>Enter your name below:</h2>
     <input type="text" id="input" v-model="name">
     <p><button class="btn btn-lg btn-primary" v-on:click="seen = !seen">Submit</button></p>
     <h2 v-if="seen">Hello {{ name }}! Welcome to the Wisdom Finder.</h2>
