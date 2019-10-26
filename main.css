@@ -5,6 +5,11 @@
    color: white;
    font-family: 'Numans', sans-serif;
    font-size: 20px;
+   padding-bottom: 20px;
+   margin-top: -20px;
+   margin-left: -10px;
+   margin-right: -10px
+
 }
 #footer {
    position:absolute;
@@ -14,13 +19,25 @@
    background:black;
    padding-top: 20px;
    padding-left: 20px;
+   padding-right: 5px;
+   margin-left: -20px
+
 
 }
 body {
-  background-color: whitesmoke;
+  background-color: navy;
+  color:white;
+  font-family: 'Major Mono Display', monospace;
+
 }
 
 #quote {
+   padding-top: 20px;
    text-align: center;
    font-weight: bold;
+   font-family: 'VT323', monospace;
+}
+
+a {
+  font-family: arial;
 }

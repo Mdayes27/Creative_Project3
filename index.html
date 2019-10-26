@@ -6,10 +6,11 @@
   <title>Words of Wisdom</title>
   <link rel="stylesheet" href="main.css">
   <script src="scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|VT323&display=swap" rel="stylesheet">
 </head>
-<div class="container" >
-  <div class ="header">
-    <h1 v-if= "seen"></h1>
+<div class="container">
+  <div class="header">
+    <h1 v-if="seen"></h1>
   </div>
 
   <body id>
@@ -24,10 +25,10 @@
         <p>
           Beware if you click you will be exposed to wonderful and magical wisdom so powerful that if not followed could be dangerous. Click enter below if you dare to start this journey.
         </p>
-        
+
       </div>
 
-    <!---This button might need to be inside of the vue, but I can't get it to work inside, so I threw it outside for now-->
+      <!---This button might need to be inside of the vue, but I can't get it to work inside, so I threw it outside for now-->
       <button id="getQuote">Enter the world of wisdom!</button>
       <div id="quote"></div>
     </div>
