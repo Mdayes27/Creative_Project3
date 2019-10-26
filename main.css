@@ -19,3 +19,8 @@
 body {
   background-color: whitesmoke;
 }
+
+#quote {
+   text-align: center;
+   font-weight: bold;
+}
